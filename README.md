@@ -54,7 +54,25 @@
 1. sin\cos\tan\
 2. asin\acos\atan\atan2
 3. 只接收弧度作为参数
-4. Math.atan2(y,x) 用于精确计算各象限的角度 
+4. Math.atan2(y,x) 用于精确计算各象限的角度
+------
+ 
+# transition
+1. 在css3 之前 ,浏览器里面所有的动画都是即时完成的
+   节省资源
+   <pre>
+   animate({属性:最终值},5000,ease,function(){})
+   </pre>
+2. 在css3多个一个变换的选择,默认还是即时完成,添加过渡特性(transition) 
+3. 如果想让一个元素的应用过渡特性,
+   * 要给改元素 添加 transition 属性
+   * 给transition 至少添加两个属性  <code>transition-property  transition-duration</code>
+   * 还有一个属性指定动画的方式  <code>transition-timing-function</code>  linear  ease ease-in ease-out ease-in-out  cubic-bezier
+   * 还有一个属性指定过渡等待的时间  <code>transition-delay</code>
+   * 通过 webkitTransitionEnd 事件 监听过渡完成的状态
+
+ 
+ 
     
     
   

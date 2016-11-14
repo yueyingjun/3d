@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        div{
+            width:200px;height:200px;
+            background: red;
+            position: absolute;
+            /*
+            transition-property: width;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.73, 0.01, 0.44, 0.32);
+            transition-delay: 2s;
+        */
+            transition: width 2s,height 2s;
+
+        }
+    </style>
+    <script>
+      window.onload=function(){
+          var div=document.getElementsByTagName("div")[0];
+          div.onclick=function(){
+            div.style.width="400px";
+
+          }
+          div.addEventListener("webkitTransitionEnd",function(){
+              div.style.height="400px";
+          })
+
+
+
+      }
+    </script>
+</head>
+<body>
+  <div>
+
+  </div>
+</body>
+</html>
