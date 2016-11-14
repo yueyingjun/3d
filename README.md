@@ -47,6 +47,16 @@
    <code>角度=弧度*180/PI
    弧度=角度*PI/180
     </code>
+-----------
+
+# javascript 三角函数
+
+1. sin\cos\tan\
+2. asin\acos\atan\atan2
+3. 只接收弧度作为参数
+4. Math.atan2(y,x) 用于精确计算各象限的角度 
+    
+    
   
 
   
